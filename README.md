@@ -13,7 +13,7 @@
 
   A Fully Responsive Website for News Cafe, <br />across all devices, build using HTML, CSS, and vanilla JavaScript.
 
-  <a href="https://news_cafe.netlify.app/"><strong>➥ Live Demo</strong></a>
+  <a href="https://the-news-cafe.netlify.app/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
