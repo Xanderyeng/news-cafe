@@ -15,6 +15,11 @@
   /* Specify the path to your font file */
 }
 
+@font-face {
+  font-family: 'rethink-slim';
+  src: url('/assets/fonts/RethinkSans-Medium-BF657912270969d.ttf') format('truetype');
+}
+
 /* Apply the custom font to specific elements */
 .custom-text {
   font-family: 'rethink', sans-serif; 
@@ -808,6 +813,27 @@ body.nav-active { overflow: hidden; }
 }
 
 
+.section-overlay {
+  position: relative;
+}
+
+.section-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 2;
+  /* padding: 0px 20px; */
+}
+
+.section-overlay-content {
+  position: relative;
+  z-index: 30;
+}
+
 
 
 
@@ -1197,6 +1223,7 @@ body.nav-active { overflow: hidden; }
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-3);
+  /* font-size: 18px; */
 }
 
 
@@ -1645,6 +1672,20 @@ textarea.input-field {
     margin-inline: auto;
   }
 
+  /*
+  * 
+    RESERVATION
+  *
+  */
+
+  article section {
+    position: relative;
+  }
+  
+  section > .container {
+    position: relative !important;
+    z-index: 50;
+  }
 
 
   /**
@@ -1747,10 +1788,20 @@ textarea.input-field {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
+    
   }
 
   .reservation .input-wrapper:nth-child(4) {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* article {
+    position: relative;
+  } */
+  
+  section.reservation {
+    position: relative;
+    z-index: 50;
   }
 
 
@@ -1898,6 +1949,11 @@ textarea.input-field {
   .testi-text {
     max-width: 910px;
     margin-inline: auto;
+    font-family: 'rethink-slim';
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: 0.025em;
+    text-transform: capitalize;
   }
 
 
