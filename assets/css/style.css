@@ -68,6 +68,7 @@
 );
 
   --gold-crayola: hsl(38, 61%, 73%);
+  --royal-purple: hsl(291, 75%, 33%);
   --quick-silver: hsla(0, 0%, 65%, 1);
   --davys-grey: hsla(30, 3%, 34%, 1);
   --smoky-black-1: hsla(40, 12%, 5%, 1);
@@ -745,7 +746,7 @@ body.nav-active { overflow: hidden; }
 
 .navbar .close-btn ion-icon { --ionicon-stroke-width: 40px; }
 
-.navbar .close-btn:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+.navbar .close-btn:is(:hover, :focus-visible, :focus) { color: var(--gold-crayola); }
 
 .navbar .logo {
   max-width: max-content;
@@ -844,7 +845,7 @@ body.nav-active { overflow: hidden; }
 
 .section-overlay-content {
   position: relative;
-  z-index: 30;
+  z-index: 3;
 }
 
 
@@ -1487,6 +1488,7 @@ textarea.input-field {
   bottom: 20px;
   right: 20px;
   background-color: var(--gold-crayola);
+  /* background-color: var(--royal-purple); */
   color: var(--smoky-black-1);
   font-size: 22px;
   width: 50px;
@@ -1519,6 +1521,28 @@ textarea.input-field {
   #MEDIA QUERIES
 \*-----------------------------------*/
 
+
+/**
+*
+RESPONSIVE FOR SMALLER THAN 575PX SCREEN
+*
+*/
+
+article section {
+  position: relative;
+}
+
+section > .container {
+  position: relative !important;
+  z-index: 2;
+}
+
+/* section > .reservation {
+  position: relative;
+  z-index: 50;
+} */
+
+
 /**
  * responsive for larger than 575px screen
  */
@@ -1538,7 +1562,6 @@ textarea.input-field {
     --fontSize-body-2: 2rem;
 
   }
-
 
 
   /**
@@ -1691,7 +1714,7 @@ textarea.input-field {
   *
   */
 
-  article section {
+  /* article section {
     position: relative;
   }
   
@@ -1700,6 +1723,10 @@ textarea.input-field {
     z-index: 50;
   }
 
+  section > .reservation {
+    position: relative;
+    z-index: 50;
+  } */
 
   /**
    * FOOTER
