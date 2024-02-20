@@ -20,6 +20,19 @@
   src: url('/assets/fonts/RethinkSans-Medium-BF657912270969d.ttf') format('truetype');
 }
 
+
+
+  /* 
+  *
+  MOBILE MENU
+  *
+  */
+
+  .mobile-logo {
+    text-align: left;
+    /* color: tomato; */
+  }
+
 /* Apply the custom font to specific elements */
 .custom-text {
   font-family: 'rethink', sans-serif; 
