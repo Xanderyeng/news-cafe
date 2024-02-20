@@ -1199,6 +1199,15 @@ body.nav-active { overflow: hidden; }
 }
 
 
+/**
+ DRINKS SECTION
+*
+*/
+
+#drinks img{
+  object-position: 50% 82%;
+}
+
 
 
 
